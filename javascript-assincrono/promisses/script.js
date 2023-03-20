@@ -37,4 +37,8 @@ const dados = new Promise(function(resolve) {
 
 const loadAll = Promise.all([login, dados])
 
-console.log(loadAll)
+loadAll.then(function(resolucao) {
+    console.log(resolucao)
+})
+
+// console.log(loadAll)
